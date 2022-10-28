@@ -12,12 +12,23 @@ h2{
     border: 1px solid rgb(43, 0, 255);
     display: flex;
   }
+  .boxservicios{
+    width: 870px;
+    height: 600px;
+    border-radius: 70px;
+  }
+  .images{
+    width: 270px;
+    height:350px;
+  }
+
 .encabezado {/*logo PURA VIDA*/
   height: 200px;
   background-image: url(/images/logo3-sinfondo2.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position:750px 31px;
+
+  background-size:contain;
   background-color:rgb(215, 245, 242);
   display: flex;
   font-size:40px;
@@ -28,6 +39,7 @@ h2{
 
 .navegador {
   background-color: rgb(198, 166, 166);
+  /* background-color: rgb(102, 182, 73); */
   height: 50px;
   color: aqua;
   font-size: large;
@@ -50,47 +62,68 @@ h2{
     color: rgb(122, 7, 230);
     cursor: pointer;
 }
+/*INICIO DEL GRID*/
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(400px, auto);
+  grid-template-rows: repeat(11, 350px);
+  /*grid-auto-rows: minmax(400px, auto);*/
 }
-
-
 .jumbotron {
   background-color: rgb(66, 79, 79);
-  grid-row: 1 / 2;
+  grid-row: 1/3;
   grid-column: 1/3;
   flex-wrap: wrap;
-
-
 }
-
+.servicios{
+  background-color: rgb(51, 153, 153);
+  grid-row: 3/7;
+  grid-column: 1/3; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 .aeroyoga {
-  background-color: aqua;
+  background-color: rgb(130, 221, 140);
 }
 .aeroyogakids {
-  background-color: aqua;
+  background-color: rgb(244, 221, 50);
 }
 .senderismo {
-  background-color: aqua;
+  background-color: rgb(192, 159, 230);
 }
 .natacion {
-  background-color: aqua;
+  background-color: rgb(109, 106, 146);
 }
 .galeria {
   background-color: rgb(159, 205, 205);
-  grid-row: 4/5;
+  grid-row: 7/9;
   grid-column: 1/3; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .comentarios {
   background-color: rgb(220, 233, 233);
-  grid-row: 5/6;
+  grid-row: 9/11;
   grid-column: 1/3;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+/*FIN DEL GRID*/
+.boxref{
+  background-color: beige;
+  width: 270px;
+  height:350px;
+  border-radius: 20px;
 }
 .contacto {
   background-color: rgb(255, 0, 208);
-  grid-row: 6/7;
+
+ 
   grid-column: 1/3;
 }
 .info{
