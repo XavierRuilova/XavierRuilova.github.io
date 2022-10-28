@@ -7,7 +7,18 @@
 h2{
     color: rgb(237, 72, 17);
 }
-
+#puravida{
+  color:rgb(237, 72, 17);
+  font-size: large;
+  font-weight: bold;
+  font-size: 20px;
+}
+#pf{
+  color:rgb(79, 17, 237);
+  font-size: large;
+  font-weight: bold;
+  font-size: 20px;
+}
 .box {
     border: 1px solid rgb(43, 0, 255);
     display: flex;
@@ -70,11 +81,86 @@ h2{
   /*grid-auto-rows: minmax(400px, auto);*/
 }
 .jumbotron {
-  background-color: rgb(66, 79, 79);
+  background-color: rgb(21, 184, 187);
   grid-row: 1/3;
   grid-column: 1/3;
   flex-wrap: wrap;
+  padding: 32px;
 }
+.cgjumbotron{/*contenedor general del jumbotron*/
+  width: 100%;
+  height: 100%;
+  /* padding: 32px;
+  padding-left: 200px;
+  padding-right: 200px; */
+  align-items: center;
+  justify-content: space-between;
+}
+.descripjumbo{/*contenedor de descripcion de jumbotron*/
+  width: 50%;
+  height: 80%;
+  flex-direction: column;
+  padding:100px
+
+}
+.titulojumbotron{
+  font-size: 50px;
+  font-weight:bolder;
+  font-weight: 900;
+  color: rgb(196, 151, 5);
+  line-height: 100px;
+
+}
+.descrjumbotron{
+line-height: 30px;
+font-size: 20px;
+color: rgb(0, 0, 0);
+}
+.btnjumbo{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.btninscripcion{
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border:5px white solid;
+  border-radius: 30px;
+  color: white;
+  background-color: blue;
+  font-weight: bolder;
+}
+.btninscripcion:hover{
+  color: rgb(235, 220, 220);
+  border-color:rgb(235, 220, 220) ;
+  background-color: rgb(12, 12, 163);
+}
+.btnplanfam{
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border:5px blue solid;
+  border-radius: 30px;
+  color: blue;
+  background-color: white;
+  font-weight: bolder;
+}
+.btnplanfam:hover{
+  border-color: rgb(12, 12, 163);
+  color: rgb(12, 12, 163);
+  background-color: rgb(235, 220, 220);
+}
+.imagejumbo{/*contenedor de imagen de jumbotron*/
+  width: 50%;
+  height: 80%;
+  background-image: url(/images/jumbotron3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border:10px white solid;
+}
+
 .servicios{
   background-color: rgb(51, 153, 153);
   grid-row: 3/7;
