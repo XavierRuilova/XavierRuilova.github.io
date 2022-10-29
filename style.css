@@ -164,7 +164,7 @@ color: rgb(0, 0, 0);
   background-size: cover;
   border:10px white solid;
 }
-
+/*SECCION SERVICIOS*/
 .servicios{
   background-color: rgb(51, 153, 153);
   grid-row: 3/7;
@@ -204,6 +204,7 @@ font-weight: bolder;
 .natacion {
   background-color: rgb(174, 214, 247);
 }
+/*SECCION GALERIA*/
 .galeria {
   background-color: rgb(159, 205, 205);
   grid-row: 7/9;
@@ -212,6 +213,7 @@ font-weight: bolder;
   justify-content: center;
   flex-wrap: wrap;
 }
+/*SECCION OPINIONES*/
 .comentarios {
   background-color: rgb(220, 233, 233);
   grid-row: 9/11;
