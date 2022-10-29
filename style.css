@@ -223,14 +223,56 @@ font-weight: bolder;
   flex-wrap: wrap;
 
 }
-
-/*FIN DEL GRID*/
 .boxref{
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
+  border:2px solid black;
   width: 270px;
   height:350px;
   border-radius: 20px;
+  padding: 20px;
+  flex-direction: column;
+  margin: 10px;
 }
+.fotoref{
+border:2px black solid;
+border-radius: 100px;
+width: 60px;
+height: 60px;
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.nomcal{
+  display: flex;
+  height: 90px;
+  width: 100%;
+  /* border:1px solid green; */
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.comment{
+  /* border: 1px solid green; */
+  font-size: 12px;
+}
+.fotoref1{
+  background-image: url(/images/fotoperfil1.jpg);
+}
+.fotoref2{
+  background-image: url(/images/fotoperfil2.jpg);
+}
+.fotoref3{
+  background-image: url(/images/fotoperfil3.webp);
+}
+.fotoref4{
+  background-image: url(/images/fotoperfil5.jpg);
+}
+
+/*FIN DEL GRID*/
+
+
+
 .contacto {
   background-color: rgb(255, 0, 208);
 
