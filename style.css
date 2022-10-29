@@ -24,7 +24,6 @@ h3{
   font-size: 20px;
 }
 .box {
-    border: 1px solid rgb(43, 0, 255);
     display: flex;
   }
   .boxservicios{
@@ -48,10 +47,8 @@ h3{
   display: flex;
   font-size:40px;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: center; 
 }
-
 .navegador {
   background-color: rgb(198, 166, 166);
   /* background-color: rgb(102, 182, 73); */
@@ -59,9 +56,7 @@ h3{
   color: aqua;
   font-size: large;
   justify-content: space-evenly;
-  align-items: center;  
-
-  
+  align-items: center;   
 }
 .navegador>a{
     padding-top: 2px;
@@ -81,7 +76,7 @@ h3{
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(11, 350px);
+  grid-template-rows: repeat(13, 350px);
   /*grid-auto-rows: minmax(400px, auto);*/
 }
 .jumbotron {
@@ -94,9 +89,6 @@ h3{
 .cgjumbotron{/*contenedor general del jumbotron*/
   width: 100%;
   height: 100%;
-  /* padding: 32px;
-  padding-left: 200px;
-  padding-right: 200px; */
   align-items: center;
   justify-content: space-between;
 }
@@ -105,15 +97,13 @@ h3{
   height: 80%;
   flex-direction: column;
   padding:100px
-
 }
 .titulojumbotron{
   font-size: 50px;
   font-weight:bolder;
   font-weight: 900;
-  color: rgb(196, 151, 5);
+  color: rgb(149, 30, 93);
   line-height: 100px;
-
 }
 .descrjumbotron{
 line-height: 30px;
@@ -123,7 +113,6 @@ color: rgb(0, 0, 0);
 .btnjumbo{
   display: flex;
   justify-content: flex-end;
-
 }
 .btninscripcion{
   text-decoration: none;
@@ -177,8 +166,7 @@ color: rgb(0, 0, 0);
   margin: 10px;
   justify-content: space-around;
   align-items: center;
-
-
+  border: 5px solid blue ;
 }
 .imgservicio{
   width: 330px;
@@ -191,7 +179,6 @@ color: rgb(0, 0, 0);
 padding:50px;
 font-weight: bolder;
 }
-
 .aeroyoga {
   background-color: rgb(130, 221, 140);
 }
@@ -221,7 +208,6 @@ font-weight: bolder;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-
 }
 .boxref{
   background-color: rgb(255, 255, 255);
@@ -269,17 +255,77 @@ background-size: cover;
   background-image: url(/images/fotoperfil5.jpg);
 }
 
-/*FIN DEL GRID*/
-
-
-
+/*seccion de consultas*/
 .contacto {
-  background-color: rgb(255, 0, 208);
-
- 
+  background-color: rgb(237, 168, 225);
   grid-column: 1/3;
+  grid-row: 11/14;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
+.contimg{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+.descrform{
+  padding:50px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.imgcontacto{
+  width: 730px;
+  height:500px;
+  border: 5px solid white;
+}
+.contform{
+  display: flex;
+  width: 50%;
+  justify-content:space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.formcontact{
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+}
+.inputs{
+  width: 300px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.txtarea{
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 30px;
+}
+/*FIN DEL GRID*/
 .info{
     background-color: black;
-    height: 280px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.footlinks{
+  display: flex;
+  color: white;
+  width: 250px;
+  height: 250px;
+  flex-direction: column;
+  margin: 100px;
+  padding: 32px;
+}
+.footlinks>a{
+  margin: 10px;
+  text-decoration: none;
+  color: white;
 }
