@@ -333,3 +333,234 @@ background-size: cover;
 .btnform{
   width: 100px;
 }
+/*======================MEDIA QUERIES==================================*/
+@media screen and (max-width:640px) {
+  h3{
+    font-size: 25px;/*25*/
+  }
+  #puravida{
+    font-size:medium;/*large*/
+    font-weight: bold;
+    font-size: 15px;/*20*/
+  }
+  #pf{
+    font-size: medium;/*large*/
+    font-weight: bold;
+    font-size: 15px;/*20*/
+  }
+    .boxservicios{
+      width: 520px;/*870*/
+      height: 300px;/*600*/
+      /* border-radius: 70px; */
+    }
+    .images{
+      width: 160px;/*270*/
+      height:200px;/*350*/
+    }
+  
+  .encabezado {/*logo PURA VIDA*/
+    background-position:50px 31px;
+    display: flex;
+    font-size:20px;
+    justify-content: space-evenly;
+    align-items:baseline; 
+  }
+  .navegador {
+    height: 170px;
+    font-size: large;
+    justify-content:unset;
+    align-items: center;
+    flex-direction: column;   
+  }
+  .navegador>a{
+      padding-top: 2px;/*2*/
+      padding-bottom: 2px;/*2*/
+      padding-left: 30%;/*10*/
+      padding-right: 30%;/*10*/
+      border-radius: 5px;/*20*/
+      border-width: 2px;
+      margin: 2px;
+      width: 100%;
+      text-align: center;
+  }
+  /*INICIO DEL GRID*/
+  .wrapper {/*========================WRAPPER=================================*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(54, 131px);/*350*/
+  }
+  /*SECCION JUMBOTRON*/
+  .jumbotron {
+    grid-row: 1/5;
+    flex-wrap: nowrap;/*wrap*/
+    padding: 5px;/*32*/
+  }
+  .cgjumbotron{/*contenedor general del jumbotron*/
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /*justify-content: space-between;*/
+    flex-direction: column;/*N*/
+  }
+  .descripjumbo{/*contenedor de descripcion de jumbotron*/
+    width: 100%;/*50%*/
+    height: 100%;/*80%*/
+    flex-direction: column;
+    padding:12px/*100*/
+  }
+  .titulojumbotron{
+    font-size: 30px;/*50*/
+    font-weight: 600;/*900*/
+    line-height: 30px;
+  }
+  .descrjumbotron{
+  line-height: 27px;
+  font-size: 15px;/*20*/
+  }
+  .btnjumbo{
+    display: flex;
+    justify-content: space-around;
+  }
+  .btninscripcion{
+    width: 230px;
+    text-align: center;
+  }
+  .btnplanfam{
+    width: 230px;
+    text-align: center;
+  }
+  .imagejumbo{/*contenedor de imagen de jumbotron*/
+    width: 95%;/*50%*/
+    height: 80%;
+  }
+  /*SECCION SERVICIOS*/
+  .servicios{
+    grid-row: 5/22;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .boxservicios{ /*modifica contendores de colores de los servicios*/
+    margin: 5px;/*10*/
+    flex-direction: column;    
+    align-items: center;
+    width: 100%;
+    height: 500px;
+  }
+  .imgservicio{
+    width: 200px;/*330*/
+    height:300px;/*400*/
+    margin: 15px;/**/
+  }
+  .descrservicio{
+  padding:5px;/*50*/
+  font-weight: bolder;
+  padding: 25px;/*30*/
+  }
+  /*SECCION GALERIA*/
+  .galeria {
+    grid-row: 22/30;
+    align-items:flex-start;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  /*SECCION OPINIONES*/
+  .comentarios {
+    grid-row: 30/45;
+    align-items: center;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: nowrap;
+  }
+  .boxref{
+    width: 90%;/*270*/
+    height:360px;/*350*/
+    padding: 20px;/*20*/
+    flex-direction: column;
+    margin: 5px;/*10*/
+  }
+  .nomcal{
+    height: 90px;
+    width: 100%;
+    font-size: 20px;/*16*/
+    flex-direction: row;
+  }
+  .comment{
+    font-size: 20px;/*12*/
+  }
+  /*seccion de CONSULTAS*/
+  .contacto {
+    grid-row: 45/55;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contimg{
+    width: 400px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgcontacto{
+    width: 400px;
+    height:300px;
+  }
+  .descrform{
+    padding:10px;/*50*/
+    font-weight: bolder;
+    font-size: 17px;/*25*/
+  }
+  .contform{
+    width: 100%;/*50%*/
+    height: 700px;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formcontact{
+    font-size: 14px;
+    line-height: 30px;/*40*/
+  }
+  .inputs{
+    width: 300px;/*300*/
+    height: 30px;/*30*/
+    border-radius: 30px;/*30*/
+    font-size: 12px;/*18*/
+  }
+  .txtarea{
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .btnform{
+    width: 100%;/*100*/
+  }
+}
+  /*FIN DEL GRID*/
+  .info{
+      height: 300px;
+      display: flex;
+      justify-content: flex-start;/*end*/
+      align-items: center;
+      flex-direction: row;/*N*/
+  }
+  .footlinks{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    margin: 3px;/*100*/
+    padding: 5px;/*32*/
+  }
+  .footlinks>a{
+    margin: 10px;/*10*/
+  }
+
+
+@media screen and (min-width:640px) and (max-width:1280px) {
+  
+}
+
+@media screen and (min-width:1280px) {
+  
+}
