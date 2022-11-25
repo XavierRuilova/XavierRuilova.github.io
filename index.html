@@ -4,263 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pura Vida auto-entrenamiento</title>
-    <meta
-      name="description"
-      content="Pura vida es un centro de auto-entrenaminto para aprender a confiar en ti mismo mediante actividades como: aeroyoga, natacion, senderismo y mas. Tambien ofrecemos actividades para niños que aprenderan a desenvolverse solos en la vida."
-    />
+    <title>Inscripciones</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
-  <body>
-    <!--ENCABEZADO-->
-    <header class="encabezado">
-      <h2>Pura Vida</h2>
-      <h2>Auto-entrenamiento</h2>
+  <body class="wrapper">
+    <!-- HEADER -->
+    <header class="headerResp">
+      <img src="/images/logo.png" alt="logo" id="logo" />
+      <h1>Pura Vida Auto-entrenamiento</h1>
     </header>
-    <!--NAVEGADOR-->
-    <nav class="navegador box">
-      <a>Quienes somos</a>
-      <a>Servicios</a>
-      <a>Instructores</a>
-      <a>Próximos eventos</a>
-      <a>Contáctanos</a>
-    </nav>
-    <!--GRID-->
-    <main class="wrapper">
-      <!--JUMBOTRON-->
-      <section class="box jumbotron">
-        <div class="box cgjumbotron">
-          <article class="descripjumbo box">
-            <h1 class="titulojumbotron">Desarrolla tu mejor versión</h1>
-            <p class="descrjumbotron">
-              En <span id="puravida">Pura Vida Auto-entrenamiento</span> te ayudamos a darle libertad a tu cuerpo 
-              potenciando capacidades que te sorprendería saber que tienes.
-              <br><br>Inscríbete con tu familia y aprovecha las ofertas en 
-              nuestros <span id="pf">Planes familiares</span>.
-            </p>
-            <div class="btnjumbo">
-              <a href="" class="btninscripcion">Inscribirme</a>
-              <a href="" class="btnplanfam">Plan Familiar</a>
-            </div>
+    <!-- TITULO INSCRIPCIONES -->
+    <section class="encabezado">
+      <h2 class="inscripciones">Inscripciones</h2>
+    </section>
+    <!-- FORMULARIO -->
+    <section class="formulario">
+      <form>
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="inputNombre" class="boxes" required/><br />
+        <label for="apellido">Apellido:</label><br />
+        <input type="text" id="inputApellido" class="boxes" required/><br />
+        <label for="edad">Edad (desde los 6 años):</label><br />
+        <input type="number" id="inputEdad" class="boxes" required><br />
+        <label for="curso">Curso:</label><br />
+        <input type="text" id="inputCurso" class="boxes" required><br />
+        <label for="Correo">Direccion de correo:</label><br />
+        <input type="email" id="inputMail" class="boxes" required/><br /><br>
+        <button type="submit" id="btnAgregar" class="botones boxes">Agregar</button><br />
+      </form>
+      <!-- LISTA DE ELEMENTOS  -->
+      <!-- <section id="addElements">
+        
+      </section> -->
+    </section>
 
-          </article>
-          <article class="imagejumbo box"><!--imagen agregada como fondo de contendor-->
-          </article>
-        </div>
-      </section>
-      <!--SERVICIOS-->
-      <section class="box servicios">
-        <!--aeroyoga-->
-        <article class="box aeroyoga boxservicios">
-          <div class="descrservicio">
-            <h3>Aeroyoga</h3>
-            <p class="descrjumbotron descrservicio">Esta variacion del yoga tradicional se 
-              complementa con el uso de columpios para facilitar el aprendizaje
-              de las posturas. 
-            </p>
-
-          </div>
-          <img src="/images/servicio1.jpg"class="imgservicio">
-
-          </img>
-        </article>
-        <!--aeroyogakids-->
-        <article class="box aeroyogakids boxservicios">
-          <div class="descrservicio">
-          <h3>Aeroyoga Kids</h3>
-          <p class="descrjumbotron descrservicio">El uso de los columpios convierte
-            al yoga en una actividad muy divertida para los niños. La sensación de sentir
-            que están volando es verdaderamente increible.  
-          </p>
-        </div>
-        <img src="/images/servicio2.jpg"class="imgservicio">
-
-        </img>
-        </article>
-        <!--senderismo-->
-        <article class="box senderismo boxservicios">
-          <div class="descrservicio">
-          <h3>Senderismo</h3>
-          <p class="descrjumbotron descrservicio">En Pura Vida tenemos acceso directo
-            al bosque protegio Paraíso que siempre nos cautiva con su fauna, flora y 
-            su hermosa cascada. 
-          </p>
-        </div>
-        <img src="/images/servicio3.jpg"class="imgservicio">
-
-        </img>
-        </article>
-        <!--natacion-->
-        <article class="box natacion boxservicios">
-          <div class="descrservicio">
-          <h3>Natación</h3>
-          <p class="descrjumbotron descrservicio">La natación es 
-            un deporte completo que desarrolla gran parte de los musculos
-            al igual que la confianza y concentración al estar en el agua. 
-          </p>
-        </div>
-        <img src="/images/servicio4.jpg"class="imgservicio">
-
-        </img>
-        </article>
-      </section>
-      <!--GALERIA en mosaico-->
-      <section class="box galeria">
-        <img src="/images/galeria1.jpg" alt="galeria1" class="images">
-        <img src="/images/galeria2.jpg" alt="galeria2" class="images">
-        <img src="/images/galeria3.jpg" alt="galeria3" class="images">
-        <img src="/images/galeria4.jpg" alt="galeria4" class="images">
-        <img src="/images/galeria5.jpg" alt="galeria5" class="images">
-        <img src="/images/galeria6.jpg" alt="galeria6" class="images">
-        <img src="/images/galeria7.jpg" alt="galeria7" class="images">
-        <img src="/images/galeria8.jpg" alt="galeria8" class="images">
-        <img src="/images/galeria9.jpg" alt="galeria9" class="images">
-        <img src="/images/galeria10.jpg" alt="galeria10" class="images">
-        <img src="/images/galeria11.jpg" alt="galeria11" class="images">
-        <img src="/images/galeria12.jpg" alt="galeria12" class="images">
-        <img src="/images/galeria13.jpg" alt="galeria13" class="images">
-        <img src="/images/galeria14.jpg" alt="galeria14" class="images">
-
-      </section>
-      <!--OPINIONES-->
-      <section class="box comentarios">
-        <article class="box boxref">
-          <div class="nomcal">
-            <div class="fotoref fotoref1"><!--opinion1-->
-
-            </div>
-            <div>
-              <h4>Luisa Romero</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-            </div>
-
-          </div>
-          <div class="comment">
-            <h4>Excelente</h4>
-              <p>Mis hijos llegan a casa a dormir por las actividades que realizan y se levatan con mucha energia al día siguiente. Muchas gracias!</p>
-          </div>
-        </article>
-        <article class="box boxref">
-          <div class="nomcal">
-            <div class="fotoref fotoref2"><!--opinion2-->
-
-            </div>
-            <div>
-              <h4>Farida Touma</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-            </div>
-
-          </div>
-          <div class="comment">
-            <h4>He ganado mucho</h4>
-              <p>Antos no podia toparme la punta de los pies y ahora poco a poco lo he logrado. El logro no es inmediato pero al final del año ya se ven unos resultados y con perseverancia siento que voy avanzando mucho más.</p>
-          </div>
-        </article>
-        <article class="box boxref">
-          <div class="nomcal">
-            <div class="fotoref fotoref3"><!--opinion3-->
-
-            </div>
-            <div>
-              <h4>Mila Salvarezza</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-            </div>
-
-          </div>
-          <div class="comment">
-            <h4>Muy recomendado</h4>
-              <p>Quería ir con mis hijos a la cascada ya que solo cae el agua despues de la lluvia pero no pude. Ellos me cuentan que pasaron un muy buen momento. Llegaron agotados pero muy contentos por la experiencia. Espero poder ir en una próxima ocasión. muchas gracias!</p>
-          </div>
-        </article>
-        <article class="box boxref">
-          <div class="nomcal">
-            <div class="fotoref fotoref4"><!--opinion4-->
-
-            </div>
-            <div>
-              <h4>Felipe Alvarado</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="16" height="16"><path d="M19.467,23.316,12,17.828,4.533,23.316,7.4,14.453-.063,9H9.151L12,.122,14.849,9h9.213L16.6,14.453Z"/></svg>
-            </div>
-
-          </div>
-          <div class="comment">
-            <h4>¿Dónde venden los columpios?</h4>
-              <p>A mi hija le gusta tanto pasar en los columpios que me pide comprarle uno. En mi casa no se me ocurre donde colgarlo pero ya veremos la forma si lo consiguen. A mi esposa le gutaron las fotos y me dice que quiere aprender.</p>
-          </div>
-        </article>
-
-      </section>
-      <!--FORMULARIO DE CONSULTAS-->
-      <section class="box contacto">
-        <div class="contimg">
-          <p class="descrform">En Pura Vida consideramos mucho sus opiniones. Es por esto que ponemos a su disposición nuestro formulario de consultas.</p>
-          <img src="/images/contacto1.jpg" alt="contacto1" class="imgcontacto">
-        </div>
-        <div class="contform">
-          <form class="formcontact">
-            <label for="name">Nombre: </label><br>
-            <input id="name" type="text" class="inputs"><br>
-            <label for="lastname">Apellido: </label><br>
-            <input id="lastname" type="text" class="inputs"><br>
-            <label for="mail">Correo: </label><br>
-            <input id="mail" type="email" class="inputs"><br>
-            <label for="subject">Motivo: </label><br>
-            <select name="subject" id="subject" class="inputs">
-              <option value="" class="inputs"></option>
-              <option value="" class="inputs">Información adicional</option>
-              <option value="" class="inputs">Cotizaciones</option>
-              <option value="" class="inputs">Horarios de atención</option>
-              <option value="" class="inputs">Otros</option>
-            </select><br>
-            <textarea name="" id="" cols="50" rows="10" class="txtarea">Ingresa aqui tu consulta.</textarea><br>
-            <button class="btninscripcion btnform">Enviar</button>
-          </form>
-        </div>
-      </section>
-    </main>
-<!--FOOTER-->
-    <footer class="info">
+    <!-- FOOTER -->
+    <footer class="foot">
       <div class="footlinks">
-<a href="https://www.instagram.com/puravida.ecuador.ec/?next=%2F"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
-  <g>
-    <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z" fill="#ffffff" data-original="#000000"/>
-    <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z" fill="#ffffff" data-original="#000000"/>
-    <circle cx="18.406" cy="5.594" r="1.44" fill="#ffffff" data-original="#000000"/>
-  </g>
-  </g></svg></a><!--svg instagram-->
-  <a href="https://www.facebook.com/PuraVidaAutoEntrenamiento">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
-      <g>
-        <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z" fill="#ffffff" data-original="#000000"/>
-      </g>
-      </g></svg>
-  </a><!--svg facebook-->
-    
-
+        <!--svg instagram-->
+        <a href="https://www.instagram.com/puravida.ecuador.ec/?next=%2F"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"
+            width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background: new 0 0 512 512" xml:space="preserve">
+            <g><g><path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"
+                  fill="#ffffff" data-original="#000000"/>
+                  <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z" fill="#ffffff"
+                  data-original="#000000"/>
+                <circle cx="18.406" cy="5.594" r="1.44" fill="#ffffff" data-original="#000000"/> </g> </g></svg></a>
+        <!--svg instagram-->
+        <!--svg facebook-->
+        <a href="https://www.facebook.com/PuraVidaAutoEntrenamiento">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="30" x="0" y="0" viewBox="0 0 24 24" style="enable-background: new 0 0 512 512" xml:space="preserve">
+            <g><g>
+                <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"
+                  fill="#ffffff" data-original="#000000"/>
+              </g>
+            </g></svg> 
+          </a>
       </div>
+        <!--svg facebook-->
+
       <div class="footlinks">
         <h4>Más Información</h4>
         <a href="">Personas</a>
         <a href="">Fotografos</a>
         <a href="">Comercio elecronico</a>
         <a href="">Contenido</a>
-
       </div>
       <div class="footlinks">
         <h4>Asistencia</h4>
@@ -273,9 +81,9 @@
         <a href="">Condiciones del servicio</a>
         <a href="">Términos / condiciones generales</a>
         <a href="">Política de privacidad</a>
-
       </div>
-
     </footer>
+
+    <script src="/index.js" type="text/javascript"></script>
   </body>
 </html>
